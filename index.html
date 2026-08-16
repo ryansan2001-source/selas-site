@@ -15,11 +15,26 @@
   <title>Tend: The ADHD app you'll actually keep using</title>
   <meta name="description" content="Tend is a calm, one-tap routine tracker for adults with ADHD. No streaks, no shame, no homework. Free to download, pay once for Plus, no subscription." />
 
+  <!-- Canonical: tells Google the one true URL for this page (avoids duplicate-URL confusion) -->
+  <link rel="canonical" href="https://ryansan2001-source.github.io/tend-site/" />
+
+  <!-- Browser theme colour (address bar tint on mobile) -->
+  <meta name="theme-color" content="#5CA887" />
+
   <!-- Social share preview (when the link is pasted into iMessage, Reddit, etc.) -->
+  <!-- Note: og:image must be an ABSOLUTE url, or most platforms won't fetch it -->
   <meta property="og:title" content="Tend: The ADHD app you'll actually keep using" />
   <meta property="og:description" content="Calm, one-tap routine tracking for adult ADHD brains. No streaks, no shame." />
-  <meta property="og:image" content="assets/icon.png" />
+  <meta property="og:image" content="https://ryansan2001-source.github.io/tend-site/assets/icon.png" />
+  <meta property="og:url" content="https://ryansan2001-source.github.io/tend-site/" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tend" />
+
+  <!-- Twitter/X card (summary = square, which suits an app icon) -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Tend: The ADHD app you'll actually keep using" />
+  <meta name="twitter:description" content="Calm, one-tap routine tracking for adult ADHD brains. No streaks, no shame." />
+  <meta name="twitter:image" content="https://ryansan2001-source.github.io/tend-site/assets/icon.png" />
 
   <link rel="icon" href="assets/icon.png" />
 
@@ -313,6 +328,26 @@
       </div>
     </div>
   </footer>
+
+  <!-- Structured data: helps Google understand this is an iOS app (eligible for app rich results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Tend",
+    "operatingSystem": "iOS",
+    "applicationCategory": "HealthApplication",
+    "url": "https://ryansan2001-source.github.io/tend-site/",
+    "downloadUrl": "https://apps.apple.com/us/app/tend-gentle-routines/id6782817242",
+    "description": "Tend is a calm, one-tap routine tracker for adults with ADHD. No streaks, no shame, no homework. Free to download, pay once for Plus, no subscription.",
+    "image": "https://ryansan2001-source.github.io/tend-site/assets/icon.png",
+    "author": { "@type": "Person", "name": "Ryan McGee" },
+    "offers": [
+      { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free download" },
+      { "@type": "Offer", "price": "8.99", "priceCurrency": "USD", "name": "Tend Plus (one-time unlock)" }
+    ]
+  }
+  </script>
 
 </body>
 </html>
