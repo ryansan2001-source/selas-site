@@ -1,12 +1,12 @@
-# tend-site
+# selas-site
 
-The marketing + support site for **Tend: Gentle Routines**. Plain static HTML/CSS, no
+The marketing + support site for **Selas: ADHD Routines** (formerly Selas). Plain static HTML/CSS, no
 build step, no framework. Hosted free on GitHub Pages.
 
 ## Files
 ```
-tend-site/
-  index.html      Landing page (hero, features, screenshots, why-Tend, email capture)
+selas-site/
+  index.html      Landing page (hero, features, screenshots, why-Selas, email capture)
   support.html    Support page (contact + FAQ), linked from the nav and App Store
   assets/         App icon + screenshots used by both pages
   .nojekyll       Tells GitHub Pages to serve files as-is (don't run Jekyll)
@@ -21,16 +21,16 @@ tend-site/
 
 ## Publish to GitHub Pages
 
-### Option A: brand-new repo (recommended: gives you `…github.io/tend-site/`)
-Run these from inside this `tend-site` folder. Create an empty repo named `tend-site` on
+### Option A: brand-new repo (recommended: gives you `…github.io/selas-site/`)
+Run these from inside this `selas-site` folder. Create an empty repo named `selas-site` on
 github.com first (no README), then:
 
 ```sh
 git init
 git add .
-git commit -m "Tend landing + support site"
+git commit -m "Selas landing + support site"
 git branch -M main
-git remote add origin https://github.com/ryansan2001-source/tend-site.git
+git remote add origin https://github.com/ryansan2001-source/selas-site.git
 git push -u origin main
 ```
 
@@ -38,16 +38,16 @@ Then on github.com: **Settings → Pages → Build and deployment → Source: De
 branch → Branch: `main` / `/ (root)` → Save.** Your site goes live in ~1 minute at:
 
 ```
-https://ryansan2001-source.github.io/tend-site/
+https://ryansan2001-source.github.io/selas-site/
 ```
 
-### Option B: reuse your existing `tend-legal` repo
+### Option B: reuse your existing `selas-legal` repo
 Copy `index.html`, `support.html`, and `assets/` into that repo (it already has Pages on),
 commit, and push. The landing page then lives alongside your privacy/support pages.
 
 ```sh
 git add .
-git commit -m "Add Tend landing + support pages"
+git commit -m "Add Selas landing + support pages"
 git push
 ```
 
@@ -61,9 +61,9 @@ git push
 GitHub redeploys automatically within a minute.
 
 ## Use as your App Store Connect URLs
-- **Marketing URL:** `https://ryansan2001-source.github.io/tend-site/`
-- **Support URL:** `https://ryansan2001-source.github.io/tend-site/support.html`
+- **Marketing URL:** `https://ryansan2001-source.github.io/selas-site/`
+- **Support URL:** `https://ryansan2001-source.github.io/selas-site/support.html`
 
 ## Custom domain (optional, later)
-Buy a domain (e.g. `tendapp.com`), add a `CNAME` file containing just the domain, and point
+Buy a domain (e.g. `selasapp.com`), add a `CNAME` file containing just the domain, and point
 the domain's DNS at GitHub Pages. Not needed for launch; the `github.io` URL is fine.

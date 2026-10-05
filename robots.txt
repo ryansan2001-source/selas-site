@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ryansan2001-source.github.io/tend-site/sitemap.xml
+Sitemap: https://ryansan2001-source.github.io/selas-site/sitemap.xml
