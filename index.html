@@ -106,6 +106,10 @@
     .card h3{font-size:18px;margin-bottom:8px}
     .card p{font-size:15px;color:var(--muted)}
 
+    /* ---- Little things (same cards, three across) ---- */
+    section.extras{padding:0 0 72px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+
     /* ---- Screenshot strip ---- */
     section.shots{padding:72px 0}
     .shots-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;margin-top:42px}
@@ -158,6 +162,7 @@
       .hero p.sub{margin-left:auto;margin-right:auto}
       .cta-row{justify-content:center}
       .grid4{grid-template-columns:1fr 1fr}
+      .grid3{grid-template-columns:1fr}
       .shots-row{grid-template-columns:1fr}
       .why-grid{grid-template-columns:1fr}
       .hero h1{font-size:36px}
@@ -258,6 +263,48 @@
     </div>
   </section>
 
+  <!-- LITTLE THINGS -->
+  <section class="extras" id="extras">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Little things that make it easier</h2>
+        <p>So Selas fits into your day, not the other way around.</p>
+      </div>
+      <div class="grid3">
+        <div class="card">
+          <div class="dot">⏳</div>
+          <h3>Time left, always in view</h3>
+          <p>Timers show on your Lock Screen and in the Dynamic Island, with a Stop button right there.</p>
+        </div>
+        <div class="card">
+          <div class="dot">📱</div>
+          <h3>Widgets</h3>
+          <p>Glance at today, or check in from your Home Screen or Lock Screen without opening the app.</p>
+        </div>
+        <div class="card">
+          <div class="dot">👇</div>
+          <h3>Press and hold</h3>
+          <p>Hold the Selas icon to start a timer, take a breath, add a task, or check in.</p>
+        </div>
+        <div class="card">
+          <div class="dot">🎙️</div>
+          <h3>Just ask Siri</h3>
+          <p>"Check in a routine in Selas." Or ask what's left today, hands free.</p>
+        </div>
+        <div class="card">
+          <div class="dot">🤍</div>
+          <h3>Skip without guilt</h3>
+          <p>Some days are hard. Skip a routine with no penalty, and a kind word instead of a red mark.</p>
+        </div>
+        <div class="card">
+          <div class="dot">🌙</div>
+          <h3>Dark mode</h3>
+          <p>Softer on the eyes for evening check-ins. One switch in Settings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- WHY / COUNTER-POSITION -->
   <section class="why" id="why">
     <div class="wrap">
@@ -298,11 +345,13 @@
       <ul class="plus-list">
         <li><strong>Unlimited routines.</strong> Keep as many as your day needs, not just the free three.</li>
         <li><strong>Just for today.</strong> Drop in a one-off task for today without building a whole routine.</li>
-        <li><strong>Focus sessions.</strong> A quiet, private space to work alongside, with gentle nudges.</li>
+        <li><strong>Focus sessions.</strong> A calm countdown to work alongside, right on your Lock Screen. Your reminders pause while you focus, then you get an easy rest break.</li>
         <li><strong>Breathe.</strong> A one-minute guided reset with calming rainfall, for the moments things feel like too much.</li>
         <li><strong>Nudge.</strong> Stuck or overwhelmed? Ask Nudge in plain words and it helps you take one small step, running privately on your iPhone.</li>
-        <li><strong>Flexible reminders.</strong> Several per routine, on the days and times you choose.</li>
+        <li><strong>Flexible reminders.</strong> Several per routine, on the days you choose, arriving right on time.</li>
         <li><strong>Sync across devices.</strong> Your routines back up to your private iCloud and follow you everywhere.</li>
+        <li><strong>Calendar sync.</strong> Put your routines on your calendar, each with a link straight back to today's check-in.</li>
+        <li><strong>Apple Health.</strong> Save your Breathe sessions as mindful minutes, if you want to.</li>
       </ul>
       <p class="pricing-note" style="text-align:center">A one-time $8.99 unlock (launch price $5.99). Everything you already use stays free.</p>
     </div>
